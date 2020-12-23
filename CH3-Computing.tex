@@ -1,0 +1,47 @@
+\chapter{计算技术}
+
+
+\section{GPU}
+
+\subsection{CUDA}
+
+
+\subsection{GPGPU-sim}
+
+官方主页：  http://gpgpu-sim.org/
+
+教程PPT:  http://gpgpu-sim.org/micro2012-tutorial/
+
+GIT：   https://github.com/gpgpu-sim/
+
+
+GPGPU-sim模拟： 功能模型 PTX/SASS+ CUDA/OpenCL; 时序模型；功耗模型GPUWattch
+
+功能模型： PTX/SASS
+PTX = Parallel Thread eXecution
+SASS = Native ISA for Nvidia GPUs
+
+时序模型：仅仅建模和GPU计算相关的微架构时序模型；不包含PCIe总线传输时间
+
+功耗模型： 当GPU运行计算核得时候其他部分空闲；和真实硬件的互相关性为0.98。
+为微架构得每个部件提供了时钟级模型；
+忽略了一些稀有得边角案例降低复杂性；
+CUDA手册和NVidia IEEE Micro文章提供了一些信息； 更多的是通过专利和microbenchmarking信息猜测细节。
+
+
+GPUWattch: 估算GPU功耗，利用GTX480验证
+
+
+GPGPU-sim: 两级Earp 调度器；参考ISCA2012 Tutorial.
+
+
+\section{HPC}
+
+
+\section{MPI}
+
+
+
+\section{OpenCC}
+
+\section{OpenCL}
